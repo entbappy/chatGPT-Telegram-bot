@@ -79,7 +79,7 @@ async def chatgpt(message: types.Message):
     response = openai.ChatCompletion.create(
         model = MODEL_NAME,
         messages = [
-            {"role": "assistant", "context": reference.response}, # role assistant
+            {"role": "assistant", "content": reference.response}, # role assistant
             {"role": "user", "content": message.text} #our query 
         ]
     )
