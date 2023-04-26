@@ -7,7 +7,8 @@ class Reference:
     """
     A class to store the previous response from the chatGPT API.
     """
-    raise NotImplementedError
+    def __init__(self) -> None:
+        self.response = ""
 
 
 # Load environment variables
