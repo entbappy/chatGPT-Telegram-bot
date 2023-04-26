@@ -1,4 +1,4 @@
-# chatGPT-Telegram-bot: How to build powerful chatbots with ChatGPT API, Python, and Telegram
+# chatGPT-Telegram-bot: ChatGPT API, Python, and Telegram
 
 
 ## Prerequisites
