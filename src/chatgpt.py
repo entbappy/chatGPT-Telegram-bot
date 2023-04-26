@@ -1,26 +1,3 @@
-"""
-chatgpt.py
------------
-
-This module contains the implementation of a Telegram bot that uses the OpenAI chat GPT API 
-to generate responses to user messages.
-
-Usage:
-1. Set up a Telegram bot and obtain its token.
-2. Set up an OpenAI account and obtain an API key.
-3. Set the environment variables "TOKEN" and "OPENAI_API_KEY" 
-    to the bot token and OpenAI API key, respectively.
-4. Run this script to start the bot.
-
-Note: This implementation uses the aiogram, openai library to interact with the Telegram API 
-and the OpenAI API, respectively.
-
-Example:
-    $ python chatgpt.py
-
-Author: Sunny BHaveen Chandra
-"""
-
 import os
 from dotenv import load_dotenv
 from aiogram import Bot, Dispatcher, executor, types
