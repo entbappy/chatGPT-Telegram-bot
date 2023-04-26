@@ -80,7 +80,7 @@ async def chatgpt(message: types.Message):
         model = MODEL_NAME,
         messages = [
             {"role": "assistant", "context": reference.response}, # role assistant
-            {"role", "user", "content": message.text} #our query 
+            {"role": "user", "content": message.text} #our query 
         ]
     )
     reference.response = response['choices'][0]['message']['content']
