@@ -9,6 +9,20 @@ To follow this tutorial, you will need:
 - A Telegram account and a smartphone
 - An OpenAI account and an API key
 
+
+## Telegram setup:
+
+1. search for botfather
+2. /newbot
+   - chatgpt88
+   - chatgpt88_bot
+
+   Now click on the url
+
+
+### AIogram docs
+https://docs.aiogram.dev/en/latest/
+
 ## How to run the code
 
 1. Clone this repository or download the zip file

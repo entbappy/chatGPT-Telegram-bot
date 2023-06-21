@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 from aiogram import Bot, Dispatcher, executor, types
 import openai
 
+#1st
 class Reference:
     """
     A class to store the previous response from the chatGPT API.
@@ -30,6 +31,7 @@ MODEL_NAME = "gpt-3.5-turbo"
 bot = Bot(token=TOKEN)
 dispatcher = Dispatcher(bot)
 
+#2
 def clear_past():
     """
     A function to clear the previous conversation and context.
@@ -37,6 +39,7 @@ def clear_past():
     reference.response = ""
 
 
+#3
 @dispatcher.message_handler(commands=['start'])
 async def welcome(message: types.Message):
     """
@@ -45,7 +48,7 @@ async def welcome(message: types.Message):
     clear_past()
     await message.reply("Hello! \nI'm chatGPT Telegram bot created by Bappy.\n How can I assist you?")
 
-
+#4
 @dispatcher.message_handler(commands=['clear'])
 async def clear(message: types.Message):
     """
@@ -54,7 +57,7 @@ async def clear(message: types.Message):
     clear_past()
     await message.reply("I've cleared the past conversation and context.")
 
-
+#5
 @dispatcher.message_handler(commands=['help'])
 async def helper(message: types.Message):
     """
@@ -69,7 +72,7 @@ async def helper(message: types.Message):
     """
     await message.reply(help_command)
 
-
+#6
 @dispatcher.message_handler()
 async def chatgpt(message: types.Message):
     """
